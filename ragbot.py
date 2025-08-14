@@ -46,7 +46,7 @@ index.add(embeddings)
 
 
 # Step 6: Setup Gemini LLM API
-GEMINI_API_KEY = "AIzaSyDyOnPrDKVdiTMmU7lJhNYdMFkI2iTYoEI"  # Replace with your actual API key
+#GEMINI_API_KEY = "AIzaSyDyOnPrDKVdiTMmU7lJhNYdMFkI2iTYoEI"  # Replace with your actual API key
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel('gemini-2.0-flash-exp')
 
