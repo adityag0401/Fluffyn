@@ -599,7 +599,7 @@ class FluffynAssistant:
 
     def _should_use_context(self, user_input, breeds, session_context):
         """Determine if we should use conversation context"""
-        context_indicators = ['it', 'that', 'this', 'the dog', 'the cat', 'my pet', 'he', 'she']
+        context_indicators = ['it', 'that', 'this', 'the dog', 'the cat', 'my pet', 'he', 'she','their', 'they', 'his', 'her']
 
         # If no breeds mentioned but context indicators present
         if not breeds and any(indicator in user_input.lower() for indicator in context_indicators):
@@ -684,7 +684,7 @@ class FluffynAssistant:
         pet_keywords = [
             'dog', 'cat', 'pet', 'animal', 'puppy', 'kitten', 'breed', 'training',
             'feeding', 'health', 'grooming', 'care', 'behavior', 'exercise',
-            'temperament', 'personality', 'price', 'cost'
+            'temperament', 'personality'
         ]
         return any(keyword in text for keyword in pet_keywords)
 
